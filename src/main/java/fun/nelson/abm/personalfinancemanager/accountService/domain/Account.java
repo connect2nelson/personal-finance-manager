@@ -1,4 +1,4 @@
-package fun.nelson.abm.personalfinancemanager.accountService.controller;
+package fun.nelson.abm.personalfinancemanager.accountService.domain;
 
 public class Account {
     private String name;

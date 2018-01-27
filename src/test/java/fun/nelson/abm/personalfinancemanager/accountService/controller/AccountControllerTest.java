@@ -1,5 +1,6 @@
 package fun.nelson.abm.personalfinancemanager.accountService.controller;
 
+import fun.nelson.abm.personalfinancemanager.accountService.domain.Account;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,7 +33,8 @@ public class AccountControllerTest {
 
     @Test
     public void shouldGetAccountByName() throws Exception {
-        final Account account = new Account("name");
+        final Account account = new Account();
+        account.setName("Nelson");
 
         mockMvc.perform(get("/" + account.getName()))
                 .andExpect(jsonPath("$.name").value(account.getName()))

@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      database: personal-finance-manager
+      port: 27017
+
+  datasource:
+    driver-class-name: mongodb.jdbc.MongoDriver
